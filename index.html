@@ -128,39 +128,58 @@
                 text-decoration: none;
                 color: #1190CD;
                 cursor: pointer;
-                padding: 19px;
+                padding: 17px;
             }
 
-            #enterMenuButton {
-                background-color: #1190CD;
-                padding: 19px 19px 19px 0;
-            }
-
-            #enterMenuButton a {
+            #navWidthLess1081 button {
                 color: #FFFFFF;
+                cursor: pointer;
+                background: none;
+                font-family: "Open Sans", Helvetica, sans-serif;
+                font-size: 13px;
+                font-weight: 600;  
             }
 
-            #closeMenuButton {
-                background-color: #1190CD;
-                padding: 19px;
-                border-bottom: .2px solid rgb(34, 33, 33);
-            }
-
-            #closeMenuButton a {
+            #navMenuAside button {
                 color: #FFFFFF;
+                cursor: pointer;
+                background: none;
+                font-family: "Open Sans", Helvetica, sans-serif;
+                font-size: 13px;
+                font-weight: 600;
+            }
+
+            #enterMenuButtonContainer {
+                background-color: #1190CD;
+                padding: 19px 19px 19px 19px;
+            }
+
+            #closeMenuButtonContainer {
+                background-color: #1190CD;
+                padding: 10px 16px;
+                border-bottom: .2px solid rgba(56, 53, 53, 0.342);
+            }
+
+            #closeMenuButtonContainer button {
                 padding: 7px 12px;
                 border: 2px solid white;
                 border-radius: 10%;
             }
 
-            
+        /* -----> FIM HEADER <----- */
 
-        /* Media Queries Baseadas para seguir responsividade do site original */
+        
+
+        /* -----> Media Queries Baseadas para seguir responsividade do site original <----- */
 
         @media (min-width: 1441px) 
         {
             #navWidthLess1081 {
                 display: none;
+            }
+
+            #menuAside {
+                display: none !important;
             }
         }
 
@@ -169,6 +188,10 @@
             #navWidthLess1081 {
                 display: none;
             }
+
+            #menuAside {
+                display: none !important;
+            }
         }
 
         @media (min-width: 1139px) and (max-width: 1180px) /* Muda tamanho imagem card */
@@ -176,12 +199,20 @@
             #navWidthLess1081 {
                 display: none;
             }
+
+            #menuAside {
+                display: none !important;
+            }
         }
 
         @media (min-width: 1032px) and (max-width: 1138px) /*  desaparece "anunciar imóveis" */
         {
             #linkAnunciarImoveis, #navWidthLess1081 {
                 display: none;
+            }
+
+            #menuAside {
+                display: none !important;
             }
         }
 
@@ -245,7 +276,7 @@
             <!-- Nav para largura abaixo de 1081 px, com a largura acima disso permanece invisível -->
             <div id="navWidthLess1081">
                 <div>
-                    <a href="">MENU</a>
+                    <button id="menuButton">MENU</button>
                 </div>
                 <div>
                     <a href="#" id="navImageLogoLink">
@@ -260,11 +291,11 @@
         <!-- Aside lateral aberto quando o botão menu é clicado -->
         <aside id="menuAside">
             <nav id="navMenuAside">
-                <div id="closeMenuButton">
-                    <a href="">FECHAR</a>
+                <div id="closeMenuButtonContainer">
+                    <button id="closeMenuButton">FECHAR</button>
                 </div>
-                <div id="enterMenuButton">
-                    <a href="">ENTRAR</a>
+                <div id="enterMenuButtonContainer">
+                    <button id="enterMenuButton">ENTRAR</button>
                 </div>
                 <a href="">COMPRAR</a>
                 <a href="">ALUGAR</a>
@@ -293,6 +324,8 @@
     <footer>
 
     </footer>
+
+    <script src="scripts/index.js"></script>
 
 </body>
 </html>
