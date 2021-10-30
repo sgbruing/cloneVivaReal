@@ -1,0 +1,456 @@
+* {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0
+}
+
+
+/* -----> HEADER <----- */
+
+    #headerNavbar {
+        background-color: #1190CD;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 56px;
+        padding-left: 48px;
+        padding-right: 48px;
+    }
+
+    #headerNavbar a {
+        font-family: "Open Sans", Helvetica, sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        text-decoration: none;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+
+    #navLeftContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #navRightContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+    }
+
+    #navImageLogoContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-right: 24px;
+        width: 5.5vw;
+        min-width: 110px;
+    }
+
+    #navImageLogoLink {
+        width: 100%;
+    }
+
+    #navImageLogo {
+        width: 100%;
+    }
+
+    #navActionLinksContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .navActionLinks {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+
+    .navActionLinks a {
+        padding: 0 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .navActionLinks a:hover {
+        background-color: #249ad1;
+    }
+
+    /* Nav largura abaixo de 1081px */
+    #navWidthLess1081 {
+        padding: 0 48px;
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #navMenuSideContainer {
+        position: absolute;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        width: 240px;
+        height: 100vh;
+        background-color: #FFFFFF;
+        z-index: 1;
+    }
+
+    #navMenuSide {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #navMenuSide a {
+        text-decoration: none;
+        font-family: "Open Sans", Helvetica, sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        text-decoration: none;
+        color: #1190CD;
+        cursor: pointer;
+        padding: 17px;
+    }
+
+    #navWidthLess1081 button {
+        color: #FFFFFF;
+        cursor: pointer;
+        background: none;
+        font-family: "Open Sans", Helvetica, sans-serif;
+        font-size: 13px;
+        font-weight: 600;  
+    }
+
+    #navMenuSide button {
+        color: #FFFFFF;
+        cursor: pointer;
+        background: none;
+        font-family: "Open Sans", Helvetica, sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    #enterMenuButtonContainer {
+        background-color: #1190CD;
+        padding: 19px 19px 19px 19px;
+    }
+
+    #closeMenuButtonContainer {
+        background-color: #1190CD;
+        padding: 10px 16px;
+        border-bottom: .2px solid rgba(56, 53, 53, 0.342);
+    }
+
+    #closeMenuButtonContainer button {
+        padding: 7px 12px;
+        border: 2px solid white;
+        border-radius: 10%;
+    }
+
+/* -----> FIM HEADER <----- */
+
+/* -----> MAIN <----- */
+
+main {
+    background: #FFFFFF;
+}
+
+#mainContainer {
+    padding: 0 48px 16px;
+}
+
+    /* search header */
+    #searchHeaderList {
+        display: flex;
+        flex-direction: row;
+        padding: 24px 0 12px;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 21px;
+        color: #757575;
+        font-family: "Open Sans", Helvetica, sans-serif;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+
+    .dotList {
+        font-size: 7px;
+        margin: 0 12px;
+    }
+
+    /* ---> aside <--- */
+
+    #mainAside {
+        width: 288px;
+        background: #FDD685;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #FDC34A;
+        border-radius: 4px;
+        font-family: "Open Sans", Helvetica, sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        margin-bottom: 24px;
+    } 
+
+    .mainAsideContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 16px;
+    }
+
+    .mainAsideContainer label {
+        color: rgba(0,0,0,.54);
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    .mainAsideFilterContainer {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 16px;
+    }
+
+    .mainAsideFilterContainerTour {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-bottom: 16px;
+    }
+    
+    .mainAsideFilterContainerPrice {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 16px;
+    }
+
+    .separator {
+        width: 16px;
+        top: 48px;
+        position: relative;
+        border: 0;
+        border-top: 1px solid rgba(0,0,0,.12);
+    }
+
+    .priceFilterContainer {
+        display: flex;
+        flex-direction: column;
+        width: 47%;
+    }
+
+    .textTourFilter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 10px;
+        font-family: "Open Sans", Helvetica, sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .tourFilterContainer {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    #toggleTourContainer {
+        height: 34px;
+    }
+
+    .mainAsideFilterContainer input, .mainAsideFilterContainerPrice input, .mainAsideFilterContainer select {
+        appearance: none;
+        height: 44px;
+        background: #fff;
+        border: 1px solid rgba(0,0,0,.12);
+        border-radius: 4px;
+        color: rgba(0,0,0,.54);
+        outline: none;
+        box-sizing: border-box;
+        font-family: "Open Sans", Helvetica, sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        padding: 12px;
+        box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
+    }
+
+
+    /* Switch Button*/
+    .switchFilterTour {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+    }
+  
+    .switchFilterTour input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+  
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+  
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+  
+    input:checked + .slider {
+        background-color: #2196F3;
+    }
+    
+    input:focus + .slider {
+        box-shadow: 0 0 1px #2196F3;
+    }
+    
+    input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+    }
+  
+    /* Rounded sliders */
+    .slider.round {
+        border-radius: 34px;
+    }
+    
+    .slider.round:before {
+        border-radius: 50%;
+    }
+
+    #buttonsRoomFilterContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #buttonsRoomFilterContainer button {
+        border-radius: 32px;
+        border: 1px solid #1190cd;
+        color: #1190cd;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 13px;
+        height: 32px;
+        line-height: 31px;
+        padding: 0 12px;
+        position: relative;
+        margin-top: 8px;
+        border: 1px solid rgba(0,0,0,.12);
+        background: #fff;
+        color: rgba(0,0,0,.54);
+        max-width: 44px;
+        border-color: hsla(0,0%,100%,.001);
+        -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+        box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+    }
+
+    #buttonsRoomFilterContainer button:hover {
+        background: #ebebeb;
+    }
+
+
+
+
+
+/* -----> Media Queries Baseadas para seguir responsividade do site original <----- */
+
+@media (min-width: 1441px) 
+{
+    #navWidthLess1081 {
+        display: none;
+    }
+
+    #navMenuSideContainer {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1181px) and (max-width: 1440px) /* Muda de tamanho fixo do card para diminuir o card dinamicamente */
+{
+    #navWidthLess1081 {
+        display: none;
+    }
+
+    #navMenuSideContainer {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1139px) and (max-width: 1180px) /* Muda tamanho imagem card */
+{
+    #navWidthLess1081 {
+        display: none;
+    }
+
+    #navMenuSideContainer {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1032px) and (max-width: 1138px) /*  desaparece "anunciar imóveis" */
+{
+    #linkAnunciarImoveis, #navWidthLess1081 {
+        display: none;
+    }
+
+    #navMenuSideContainer {
+        display: none !important;
+    }
+}
+
+@media (min-width: 702px) and (max-width: 1031px) /* desaparece aside, aparece botão editar filtros, header some navbar aparece botão menu que abre lateral com as categorias da navbar, botão anunciar aparece, fica só o entrar */
+{
+    #linkAnunciarImoveis, #navLeftContainer, #navRightContainer {
+        display: none;
+    }    
+
+    #headerNavbar {
+        padding: 0;
+    }
+}
+
+@media (max-width: 701px) /* card assume a tela inteira */
+{
+    #linkAnunciarImoveis, #navLeftContainer, #navRightContainer {
+        display: none;
+    }
+
+    #headerNavbar {
+        padding: 0;
+    }
+
+    #navWidthLess1081 {
+        padding: 0 16px;
+    }
+}
