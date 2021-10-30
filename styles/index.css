@@ -222,14 +222,14 @@ main {
         margin-bottom: 16px;
     }
 
-    .mainAsideFilterContainerTour {
+    .mainAsideFilterContainerToggle {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         margin-bottom: 16px;
     }
     
-    .mainAsideFilterContainerPrice {
+    .mainAsideFilterContainerTwoInputs {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -244,7 +244,7 @@ main {
         border-top: 1px solid rgba(0,0,0,.12);
     }
 
-    .priceFilterContainer {
+    .twoInputsFilterContainer {
         display: flex;
         flex-direction: column;
         width: 47%;
@@ -270,7 +270,7 @@ main {
         height: 34px;
     }
 
-    .mainAsideFilterContainer input, .mainAsideFilterContainerPrice input, .mainAsideFilterContainer select {
+    .mainAsideFilterContainer input, .mainAsideFilterContainerTwoInputs input, .mainAsideFilterContainer select {
         appearance: none;
         height: 44px;
         background: #fff;
@@ -348,13 +348,13 @@ main {
         border-radius: 50%;
     }
 
-    #buttonsRoomFilterContainer {
+    #buttonsFilterContainer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
-    #buttonsRoomFilterContainer button {
+    #buttonsFilterContainer button {
         border-radius: 32px;
         border: 1px solid #1190cd;
         color: #1190cd;
@@ -375,7 +375,7 @@ main {
         box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
     }
 
-    #buttonsRoomFilterContainer button:hover {
+    #buttonsFilterContainer button:hover {
         background: #ebebeb;
     }
 

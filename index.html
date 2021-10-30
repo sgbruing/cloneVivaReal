@@ -78,57 +78,94 @@
                     <li>Venda</li>
                 </ul>
             </div>
-            <aside id="mainAside">
-                <div class="mainAsideContainer">
-                    <div class="mainAsideFilterContainer">
-                        <label for="inputFilterLocation_1">LOCALIZAÇÃO DO IMÓVEL</label>
-                        <input class="inputFilterLocation" id="inputFilterLocation_1" type="text" placeholder="Digite uma rua, bairro ou cidade">
-                    </div>
-                    <div class="mainAsideFilterContainerTour">
-                        <div>
-                            <label for="">IMÓVEL COM</label>
-                            <div class="tourFilterContainer">
-                                <div id="toggleTourContainer">
-                                    <label class="switchFilterTour">
-                                        <input type="checkbox">
-                                        <span class="slider round"></span>
-                                    </label> 
-                                </div>
-                                <div class="textTourFilter">
-                                    <p>Tour Virtual ou Vídeos</p>
+            <div id="contentContainer">
+                <aside id="mainAside">
+                    <div class="mainAsideContainer">
+                        <div class="mainAsideFilterContainer">
+                            <label for="inputFilterLocation_1">LOCALIZAÇÃO DO IMÓVEL</label>
+                            <input class="inputFilter" id="inputFilterLocation" type="text" placeholder="Digite uma rua, bairro ou cidade">
+                        </div>
+                        <div class="mainAsideFilterContainerToggle">
+                            <div>
+                                <label for="">IMÓVEL COM</label>
+                                <div class="tourFilterContainer">
+                                    <div id="toggleTourContainer">
+                                        <label class="switchFilterTour">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label> 
+                                    </div>
+                                    <div class="textTourFilter">
+                                        <p>Tour Virtual ou Vídeos</p>
+                                    </div>
                                 </div>
                             </div>
+                       </div>
+                        <div class="mainAsideFilterContainer">
+                            <label for="selectFilterType">TIPO DE IMÓVEL</label>
+                            <select id="selectFilterType">
+                                <option value="">Mostrar Todos</option>
+                            </select>
                         </div>
-                   </div>
-                    <div class="mainAsideFilterContainer">
-                        <label for="selectFilterType">TIPO DE IMÓVEL</label>
-                        <select id="selectFilterType">
-                            <option value="">Mostrar Todos</option>
-                        </select>
+                        <div class="mainAsideFilterContainerTwoInputs">
+                            <div class="twoInputsFilterContainer">
+                                <label for="minPriceInputFilter">PREÇO MÍNIMO</label>
+                                <input id="minPriceInputFilter" class="inputFilter" type="number" placeholder="R$">
+                            </div>
+                            <hr class="separator">
+                            <div class="twoInputsFilterContainer">
+                                <label for="maxPriceInputFilter">PREÇO MÁXIMO</label>
+                                <input id="maxPriceInputFilter" class="inputFilter" type="number" placeholder="R$">
+                            </div>
+                        </div>
+                        <div class="mainAsideFilterContainer">
+                            <label for="buttonsFilterContainer">NÚMERO DE QUARTOS</label>
+                            <div id="buttonsFilterContainer">
+                                <button id="btnFilterRoom_1">1+</button>
+                                <button id="btnFilterRoom_2">2+</button>
+                                <button id="btnFilterRoom_3">3+</button>
+                                <button id="btnFilterRoom_4">4+</button>
+                                <button id="btnFilterRoom_5">5+</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="mainAsideFilterContainerPrice">
-                        <div class="priceFilterContainer">
-                            <label for="minPriceInputFilter">PREÇO MÍNIMO</label>
-                            <input id="minPriceInputFilter" class="inputPriceFilter" type="number" placeholder="R$">
+                    <div class="mainAsideContainer">
+                        <div class="mainAsideFilterContainerTwoInputs">
+                            <div class="twoInputsFilterContainer">
+                                <label for="minPriceInputFilter">ÁREA MÍNIMA</label>
+                                <input id="minPriceInputFilter" class="inputFilter" type="number" placeholder="m²">
+                            </div>
+                            <hr class="separator">
+                            <div class="twoInputsFilterContainer">
+                                <label for="maxPriceInputFilter">ÁREA MÁXIMA</label>
+                                <input id="maxPriceInputFilter" class="inputFilter" type="number" placeholder="m²">
+                            </div>
                         </div>
-                        <hr class="separator">
-                        <div class="priceFilterContainer">
-                            <label for="maxPriceInputFilter">PREÇO MÁXIMO</label>
-                            <input id="maxPriceInputFilter" class="inputPriceFilter" type="number" placeholder="R$">
+                        <div class="mainAsideFilterContainer">
+                            <label for="buttonsFilterContainer">NÚMERO DE VAGAS NA GARAGEM</label>
+                            <div id="buttonsFilterContainer">
+                                <button id="btnFilterRoom_1">1+</button>
+                                <button id="btnFilterRoom_2">2+</button>
+                                <button id="btnFilterRoom_3">3+</button>
+                                <button id="btnFilterRoom_4">4+</button>
+                                <button id="btnFilterRoom_5">5+</button>
+                            </div>
+                        </div>
+                        <div class="mainAsideFilterContainer">
+                            <label for="buttonsFilterContainer">NÚMERO DE VAGAS NA GARAGEM</label>
+                            <div id="buttonsFilterContainer">
+                                <button id="btnFilterRoom_1">1+</button>
+                                <button id="btnFilterRoom_2">2+</button>
+                                <button id="btnFilterRoom_3">3+</button>
+                                <button id="btnFilterRoom_4">4+</button>
+                                <button id="btnFilterRoom_5">5+</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="mainAsideFilterContainer">
-                        <label for="buttonsRoomFilterContainer">NÚMERO DE QUARTOS</label>
-                        <div id="buttonsRoomFilterContainer">
-                            <button id="btnFilterRoom_1">1+</button>
-                            <button id="btnFilterRoom_2">2+</button>
-                            <button id="btnFilterRoom_3">3+</button>
-                            <button id="btnFilterRoom_4">4+</button>
-                            <button id="btnFilterRoom_5">5+</button>
-                        </div>
-                    </div>
-                </div>
-            </aside>
+                </aside>
+                <div></div>
+            </div>
+
             <nav>
     
             </nav>
