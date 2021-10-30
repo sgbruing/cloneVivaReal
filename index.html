@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar Imóveis - Oferta de imóveis à venda - Viva Real</title>
+
+    <style>
+
+        * {
+            padding:0;
+            margin:0;
+            vertical-align:baseline;
+            list-style:none;
+            border:0
+        }
+
+
+        /* -----> HEADER <----- */
+
+            #headerNavbar {
+                background-color: #1190CD;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                height: 56px;
+                padding-left: 48px;
+                padding-right: 48px;
+            }
+
+            #headerNavbar a {
+                font-family: "Open Sans", Helvetica, sans-serif;
+                font-size: 13px;
+                font-weight: 600;
+                text-decoration: none;
+                color: #FFFFFF;
+                cursor: pointer;
+            }
+
+            #navLeftContainer {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            #navRightContainer {
+                display: flex;
+                flex-direction: column;
+                justify-content: center; 
+            }
+
+            #navImageLogoContainer {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                margin-right: 24px;
+                width: 5.5vw;
+                min-width: 110px;
+            }
+
+            #navImageLogoLink {
+                width: 100%;
+            }
+
+            #navImageLogo {
+                width: 100%;
+            }
+
+            #navActionLinksContainer {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 100%;
+            }
+
+            .navActionLinks {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                height: 100%;
+            }
+
+            .navActionLinks a {
+                padding: 0 16px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 100%;
+            }
+
+            .navActionLinks a:hover {
+                background-color: #249ad1;
+            }
+
+            /* Nav largura abaixo de 1081px */
+            #navWidthLess1081 {
+                padding: 0 48px;
+                display: flex;
+                width: 100%;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            #menuAside {
+                position: absolute;
+                top: 0;
+                display: flex;
+                flex-direction: column;
+                width: 240px;
+                height: 100vh;
+                background-color: #FFFFFF;
+            }
+
+            #navMenuAside {
+                display: flex;
+                flex-direction: column;
+            }
+
+            #navMenuAside a {
+                text-decoration: none;
+                font-family: "Open Sans", Helvetica, sans-serif;
+                font-size: 13px;
+                font-weight: 600;
+                text-decoration: none;
+                color: #1190CD;
+                cursor: pointer;
+                padding: 19px;
+            }
+
+            #enterMenuButton {
+                background-color: #1190CD;
+                padding: 19px 19px 19px 0;
+            }
+
+            #enterMenuButton a {
+                color: #FFFFFF;
+            }
+
+            #closeMenuButton {
+                background-color: #1190CD;
+                padding: 19px;
+                border-bottom: .2px solid rgb(34, 33, 33);
+            }
+
+            #closeMenuButton a {
+                color: #FFFFFF;
+                padding: 7px 12px;
+                border: 2px solid white;
+                border-radius: 10%;
+            }
+
+            
+
+        /* Media Queries Baseadas para seguir responsividade do site original */
+
+        @media (min-width: 1441px) 
+        {
+            #navWidthLess1081 {
+                display: none;
+            }
+        }
+
+        @media (min-width: 1181px) and (max-width: 1440px) /* Muda de tamanho fixo do card para diminuir o card dinamicamente */
+        {
+            #navWidthLess1081 {
+                display: none;
+            }
+        }
+
+        @media (min-width: 1139px) and (max-width: 1180px) /* Muda tamanho imagem card */
+        {
+            #navWidthLess1081 {
+                display: none;
+            }
+        }
+
+        @media (min-width: 1032px) and (max-width: 1138px) /*  desaparece "anunciar imóveis" */
+        {
+            #linkAnunciarImoveis, #navWidthLess1081 {
+                display: none;
+            }
+        }
+
+        @media (min-width: 702px) and (max-width: 1031px) /* desaparece aside, aparece botão editar filtros, header some navbar aparece botão menu que abre lateral com as categorias da navbar, botão anunciar aparece, fica só o entrar */
+        {
+            #linkAnunciarImoveis, #navLeftContainer, #navRightContainer {
+                display: none;
+            }    
+
+            #headerNavbar {
+                padding: 0;
+            }
+        }
+
+        @media (max-width: 701px) /* card assume a tela inteira */
+        {
+            #linkAnunciarImoveis, #navLeftContainer, #navRightContainer {
+                display: none;
+            }
+
+            #headerNavbar {
+                padding: 0;
+            }
+
+            #navWidthLess1081 {
+                padding: 0 16px;
+            }
+        }
+
+
+    </style>
+
+</head>
+<body style="background-color: black;">
+    
+    <header>
+        <nav id="headerNavbar">
+            <div id="navLeftContainer">
+                <div id="navImageLogoContainer">
+                    <a href="#" id="navImageLogoLink">
+                        <img id="navImageLogo" src="/assets/images/logoVivaReal.svg" alt="Logo VivaReal">
+                    </a>
+                </div>
+                <div id="navActionLinksContainer">
+                    <div class="navActionLinks">
+                        <a href="#">COMPRAR</a>
+                        <a href="#">ALUGAR</a>
+                        <a href="#">IMÓVEIS NOVOS</a>
+                        <a href="#">BEST FRIDAY</a>
+                        <a href="#">DESCOBRIR</a>
+                        <a href="#">FINANCIAMENTO</a>
+                    </div>
+                </div>
+            </div>
+            <div id="navRightContainer">
+                <div class="navActionLinks">
+                    <a id="linkAnunciarImoveis" href="#">ANUNCIAR IMÓVEIS</a>
+                    <a href="#">ENTRAR</a>
+                </div>
+            </div>
+            <!-- Nav para largura abaixo de 1081 px, com a largura acima disso permanece invisível -->
+            <div id="navWidthLess1081">
+                <div>
+                    <a href="">MENU</a>
+                </div>
+                <div>
+                    <a href="#" id="navImageLogoLink">
+                        <img id="navImageLogo" src="/assets/images/logoVivaReal.svg" alt="Logo VivaReal">
+                    </a>
+                </div>
+                <div>
+                    <a href="">ANUNCIAR</a>
+                </div>
+            </div>
+        </nav>
+        <!-- Aside lateral aberto quando o botão menu é clicado -->
+        <aside id="menuAside">
+            <nav id="navMenuAside">
+                <div id="closeMenuButton">
+                    <a href="">FECHAR</a>
+                </div>
+                <div id="enterMenuButton">
+                    <a href="">ENTRAR</a>
+                </div>
+                <a href="">COMPRAR</a>
+                <a href="">ALUGAR</a>
+                <a href="">IMÓVEIS NOVOS</a>
+                <a href="">BEST FRIDAY</a>
+                <a href="">DESCOBRIR</a>
+                <a href="">FINANCIAMENTO</a>
+                <a href="">ANUNCIAR IMÓVEIS</a>
+            </nav>
+        </aside>
+    </header>
+    <main>
+        <aside>
+
+        </aside>
+        <nav>
+
+        </nav>
+        <section>
+            <div class="card">
+
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
+</html>
