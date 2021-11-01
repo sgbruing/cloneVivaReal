@@ -5,7 +5,7 @@ class housesRequest {
             const response = await fetch(url)
             return await response.json()
         } catch (error) {
-            throw new Error (`Request fail! Error: ${error}`)
+            throw new Error (`Backend request fail! Error: ${error}`)
         }
     }
 
@@ -35,10 +35,40 @@ class housesRequest {
             console.log('housesObjetcsArray: ', housesObjetcsArray)
             return housesObjetcsArray
         } catch (error) {
-            throw new Error (`An error has occurred: ${error}`)
+            throw new Error (`An error has occurred (backend): ${error}`)
         }
     }
 
 }
 
+class cityValidator {
+
+    async request(url) {
+        try{
+            const response = await fetch(url)
+            return await response.json();
+        } catch {
+            throw new Error (`IBGE request fail! Error: ${error}`)
+        }
+    }
+
+    async getCityObject(city) {
+        const url = `https://servicodados.ibge.gov.br/api/v1/localidades/municipios/${city}`
+        try {
+            const response = await this.request(url)
+            let cityObject = {city: city, UF: (response.microrregiao.mesorregiao.UF.sigla).toLowerCase()}
+            return cityFormater(cityObject)
+        } catch (err) {
+            throw new Error (`An error has occurred (ibge): ${error}`)
+        }
+    }
+
+    cityFormater = (city) => {
+        let cityName = city.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replaceAll(" ", "-")
+        return cityName
+    }
+
+}
+
 export default housesRequest
+export default Request
