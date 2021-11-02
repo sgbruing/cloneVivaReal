@@ -182,10 +182,14 @@ main {
         font-size: 13px;
         font-weight: 400;
         line-height: 21px;
-        color: #757575;
         font-family: "Open Sans", Helvetica, sans-serif;
         text-decoration: none;
         white-space: nowrap;
+    }
+
+    #searchHeaderList a {
+        text-decoration: none;
+        color: #757575;
     }
 
     .dotList {
@@ -323,7 +327,7 @@ main {
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: #ccc;
+        background-color: rgba(204, 204, 204, 0.274);
         -webkit-transition: .4s;
         transition: .4s;
     }
@@ -354,7 +358,6 @@ main {
         transform: translateX(26px);
     }
   
-    /* Rounded sliders */
     .slider.round {
         border-radius: 34px;
     }
@@ -392,6 +395,10 @@ main {
 
     .buttonsFilterContainer button:hover {
         background: #ebebeb;
+    }
+
+    .inputFilter:focus { 
+        border: 1px solid #1190cd;
     }
 
     /* ---> fim aside <--- */
@@ -581,7 +588,7 @@ img {
     margin-left: 8px;
 }
 
-.houseOfCards article:hover .buttonContainer button {
+.cardsContainer article:hover .buttonContainer button {
     opacity: 100;
     font-weight: 600;
     background-color: white;
@@ -621,10 +628,13 @@ img {
     font-weight: 400;
 }
 
+/* TOTAL RESULTS */
 #totalResults {
     margin: 15px 0px;
     font-size: 15px;
 }
+
+/* BUTTONS */
 
 .radioMenuContainer {
     padding: 0px;
@@ -640,6 +650,18 @@ img {
     color: white !important;
     border-color: #2097D0 !important;
 }
+
+
+input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+
 
 /* -----> Media Queries Baseadas para seguir responsividade do site original <----- */
 
