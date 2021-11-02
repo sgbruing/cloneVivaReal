@@ -363,13 +363,13 @@ main {
         border-radius: 50%;
     }
 
-    #buttonsFilterContainer {
+    .buttonsFilterContainer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
-    #buttonsFilterContainer button {
+    .buttonsFilterContainer button {
         border-radius: 32px;
         border: 1px solid #1190cd;
         color: #1190cd;
@@ -390,7 +390,7 @@ main {
         box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
     }
 
-    #buttonsFilterContainer button:hover {
+    .buttonsFilterContainer button:hover {
         background: #ebebeb;
     }
 
@@ -409,6 +409,8 @@ main {
 
     #centralContentHeader {
         height: 45px;
+        display: flex;
+        flex-direction: row;
     }
 
     #contentNavBar {
@@ -434,7 +436,210 @@ main {
         background-color: rgba(17,144,205,.08);
     }
 
-    
+/* -----> CARDS <----- */
+
+.cardsContainer article {
+    cursor: pointer;
+    display: grid;
+    height: 240px;
+    grid-template-columns: auto 1fr;
+    border: 1px solid #ebebeb;
+    border-radius: 4px;
+    grid-template-areas: 'esquerdaCard direitaCard';
+    margin-bottom: 16px;
+}
+
+.cardsContainer article:hover {
+    box-shadow: 0 4px 16px 0 rgb(0 0 0 / 12%);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.imageWrapper {
+    grid-area: esquerdaCard;
+    height: 240px;
+    width: 360px;
+}
+
+.infoOutContainer {
+    padding: 16px;
+    min-width: 300px;
+}
+
+.addressContainer {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-size-adjust: none;
+    color: #0000008a;   
+    font-family: 'Open Sans', sans-serif; 
+    height: 23px;
+}
+
+.nameContainer {
+    display: inline-block;
+    text-overflow: ellipsis;
+    width: 99%;
+    padding-right: 10px;
+    white-space: nowrap;
+    font-size: 20px;
+    color: #000000de;
+    line-height: 28px;
+    max-height: 28px;
+    overflow: hidden;
+    font-weight: 400;
+}
+
+.divHeader {
+    display: grid;
+}
+
+.amenitiesContainer {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: top;
+}
+
+.amenitiesContainer li {
+    font-size: 13px;
+    background-color: #ebebeb;  
+    border-radius: 12px;  
+    margin-right: 8px;
+    padding: 0px 8px;
+    line-height: 21px;
+    color: #a8a8a8;
+    font-weight: 600;
+    max-height: 21px;
+}
+
+.perksContainer {
+    margin: 12px 0px;
+    display: flex;
+}
+
+.perksContainer li {
+    font-weight: 400;
+    line-height: 23px;
+    padding-right: 8px;
+    font-size: 13px;
+}
+
+.perkNumber {
+    font-weight: 600;
+}
+
+.priceBlockContainer {
+    position: relative;
+    bottom: 64.89px;
+    height: 49px;
+    left: 376px;
+    width: fit-content;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.priceContainer {
+    color: #000000de;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.condoContainer {
+    line-height: 19px;
+    font-size: 13px;
+}
+
+.buttonContainer {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    bottom: 56px;
+    margin-right: 16px;
+    height: 40px;
+    line-height: 19px;
+}
+
+.buttonContainer button {
+    opacity: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    padding: 8px 12px;
+    font-weight: 600;
+}
+
+.buttonContainer button:last-child {
+    margin-left: 8px;
+}
+
+.houseOfCards article:hover .buttonContainer button {
+    opacity: 100;
+    font-weight: 600;
+    background-color: white;
+    border: none;
+    color: #EE6500;
+    transition: opacity .2s ease-in-out;
+}
+
+.buttonContainer button:hover {
+    border: none;
+    border-radius: 4px;
+    color: white !important;
+    background-color: #EE6500 !important;
+    opacity: 100;
+    transition: opacity .2s ease-in-out;
+    cursor: pointer;
+}
+/* -----> FIM CARDS <----- */
+
+
+/* ERROR MESSAGE */
+#errorDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+#errorDiv h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+#errorDiv h2 {
+    color: red;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+#totalResults {
+    margin: 15px 0px;
+    font-size: 15px;
+}
+
+.radioMenuContainer {
+    padding: 0px;
+    justify-content: space-around;
+    position: relative;
+    right: 0;
+    top: 0;
+    width: auto;
+}
+
+.buttonChecked {
+    background-color: #1190CD !important;
+    color: white !important;
+    border-color: #2097D0 !important;
+}
 
 /* -----> Media Queries Baseadas para seguir responsividade do site original <----- */
 
