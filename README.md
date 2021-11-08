@@ -3,7 +3,8 @@
 
 <p align="justify"> Neste projeto foram exercitados conceitos práticos de HTML Semântico, CSS e Javascript Puro, realizando o consumo de uma API e criando elementos (cards) dinamicamente na tela com base na resposta desta API!</p>
 
-<a href="https://codesandbox.io/s/4lg62?file=/index.html:1054-1104"> Link para visualizar o projeto :) -> Digite SP ou Rio de Janeiro</a>
+<a href="https://codesandbox.io/s/4lg62?file=/index.html:1054-1104"> Link para visualizar o projeto :)</a>
+-> Digite SP ou RJ na barra de pesquisa para testar!
 
 > Status do Projeto: Concluido :heavy_check_mark:
 
